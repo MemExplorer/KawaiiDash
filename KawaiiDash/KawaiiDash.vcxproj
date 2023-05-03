@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{df71fafc-21a8-422b-b803-d1dd9c0b6199}</ProjectGuid>
+    <RootNamespace>KawaiiDash</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>KawaiiDash</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)KawaiiDash\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)KawaiiDash\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)KawaiiDash\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)KawaiiDash\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)KawaiiDash\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2-staticd.lib;SDL2_ttfd.lib;SDL2_mixer-staticd.lib;freetyped.lib;zlibd.lib;libpng16d.lib;SDL2_imaged.lib;winmm.lib;Imm32.lib;Version.lib;Setupapi.lib;Kernel32.lib;bz2d.lib;brotlidec-staticd.lib;brotlicommon-staticd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2-static.lib;SDL2_ttf.lib;SDL2_mixer-static.lib;freetype.lib;zlib.lib;libpng16.lib;SDL2_image.lib;winmm.lib;Imm32.lib;Version.lib;Setupapi.lib;Kernel32.lib;bz2.lib;brotlidec-static.lib;brotlicommon-staticd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="KawaiiDash.cpp" />
+    <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameRenderer.cpp" />
+    <ClCompile Include="GameSound.cpp" />
+    <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="GameTextManager.cpp" />
+    <ClCompile Include="GameTextObject.cpp" />
+    <ClCompile Include="Obstacle.cpp" />
+    <ClCompile Include="ObstacleLogicComponent.cpp" />
+    <ClCompile Include="ObstacleLogicManager.cpp" />
+    <ClCompile Include="ObstacleManager.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="SpriteManager.cpp" />
+    <ClCompile Include="Spritesheet.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="GameDefs.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameRenderer.h" />
+    <ClInclude Include="GameSound.h" />
+    <ClInclude Include="GameSoundType.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="GameTextManager.h" />
+    <ClInclude Include="GameTextObject.h" />
+    <ClInclude Include="GameTextType.h" />
+    <ClInclude Include="Include\begin_code.h" />
+    <ClInclude Include="Include\close_code.h" />
+    <ClInclude Include="Include\SDL.h" />
+    <ClInclude Include="Include\SDL_assert.h" />
+    <ClInclude Include="Include\SDL_atomic.h" />
+    <ClInclude Include="Include\SDL_audio.h" />
+    <ClInclude Include="Include\SDL_bits.h" />
+    <ClInclude Include="Include\SDL_blendmode.h" />
+    <ClInclude Include="Include\SDL_clipboard.h" />
+    <ClInclude Include="Include\SDL_config.h" />
+    <ClInclude Include="Include\SDL_copying.h" />
+    <ClInclude Include="Include\SDL_cpuinfo.h" />
+    <ClInclude Include="Include\SDL_egl.h" />
+    <ClInclude Include="Include\SDL_endian.h" />
+    <ClInclude Include="Include\SDL_error.h" />
+    <ClInclude Include="Include\SDL_events.h" />
+    <ClInclude Include="Include\SDL_filesystem.h" />
+    <ClInclude Include="Include\SDL_gamecontroller.h" />
+    <ClInclude Include="Include\SDL_gesture.h" />
+    <ClInclude Include="Include\SDL_guid.h" />
+    <ClInclude Include="Include\SDL_haptic.h" />
+    <ClInclude Include="Include\SDL_hidapi.h" />
+    <ClInclude Include="Include\SDL_hints.h" />
+    <ClInclude Include="Include\SDL_image.h" />
+    <ClInclude Include="Include\SDL_joystick.h" />
+    <ClInclude Include="Include\SDL_keyboard.h" />
+    <ClInclude Include="Include\SDL_keycode.h" />
+    <ClInclude Include="Include\SDL_loadso.h" />
+    <ClInclude Include="Include\SDL_locale.h" />
+    <ClInclude Include="Include\SDL_log.h" />
+    <ClInclude Include="Include\SDL_main.h" />
+    <ClInclude Include="Include\SDL_messagebox.h" />
+    <ClInclude Include="Include\SDL_metal.h" />
+    <ClInclude Include="Include\SDL_misc.h" />
+    <ClInclude Include="Include\SDL_mixer.h" />
+    <ClInclude Include="Include\SDL_mouse.h" />
+    <ClInclude Include="Include\SDL_mutex.h" />
+    <ClInclude Include="Include\SDL_name.h" />
+    <ClInclude Include="Include\SDL_opengl.h" />
+    <ClInclude Include="Include\SDL_opengles.h" />
+    <ClInclude Include="Include\SDL_opengles2.h" />
+    <ClInclude Include="Include\SDL_opengles2_gl2.h" />
+    <ClInclude Include="Include\SDL_opengles2_gl2ext.h" />
+    <ClInclude Include="Include\SDL_opengles2_gl2platform.h" />
+    <ClInclude Include="Include\SDL_opengles2_khrplatform.h" />
+    <ClInclude Include="Include\SDL_opengl_glext.h" />
+    <ClInclude Include="Include\SDL_pixels.h" />
+    <ClInclude Include="Include\SDL_platform.h" />
+    <ClInclude Include="Include\SDL_power.h" />
+    <ClInclude Include="Include\SDL_quit.h" />
+    <ClInclude Include="Include\SDL_rect.h" />
+    <ClInclude Include="Include\SDL_render.h" />
+    <ClInclude Include="Include\SDL_revision.h" />
+    <ClInclude Include="Include\SDL_rwops.h" />
+    <ClInclude Include="Include\SDL_scancode.h" />
+    <ClInclude Include="Include\SDL_sensor.h" />
+    <ClInclude Include="Include\SDL_shape.h" />
+    <ClInclude Include="Include\SDL_stdinc.h" />
+    <ClInclude Include="Include\SDL_surface.h" />
+    <ClInclude Include="Include\SDL_system.h" />
+    <ClInclude Include="Include\SDL_syswm.h" />
+    <ClInclude Include="Include\SDL_test.h" />
+    <ClInclude Include="Include\SDL_test_assert.h" />
+    <ClInclude Include="Include\SDL_test_common.h" />
+    <ClInclude Include="Include\SDL_test_compare.h" />
+    <ClInclude Include="Include\SDL_test_crc32.h" />
+    <ClInclude Include="Include\SDL_test_font.h" />
+    <ClInclude Include="Include\SDL_test_fuzzer.h" />
+    <ClInclude Include="Include\SDL_test_harness.h" />
+    <ClInclude Include="Include\SDL_test_images.h" />
+    <ClInclude Include="Include\SDL_test_log.h" />
+    <ClInclude Include="Include\SDL_test_md5.h" />
+    <ClInclude Include="Include\SDL_test_memory.h" />
+    <ClInclude Include="Include\SDL_test_random.h" />
+    <ClInclude Include="Include\SDL_thread.h" />
+    <ClInclude Include="Include\SDL_timer.h" />
+    <ClInclude Include="Include\SDL_touch.h" />
+    <ClInclude Include="Include\SDL_ttf.h" />
+    <ClInclude Include="Include\SDL_types.h" />
+    <ClInclude Include="Include\SDL_version.h" />
+    <ClInclude Include="Include\SDL_video.h" />
+    <ClInclude Include="Include\SDL_vulkan.h" />
+    <ClInclude Include="ObjectType.h" />
+    <ClInclude Include="Obstacle.h" />
+    <ClInclude Include="ObstacleAnimType.h" />
+    <ClInclude Include="ObstacleLogicComponent.h" />
+    <ClInclude Include="ObstacleLogicManager.h" />
+    <ClInclude Include="ObstacleManager.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="SpriteManager.h" />
+    <ClInclude Include="Spritesheet.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="Utils.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
